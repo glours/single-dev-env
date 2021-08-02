@@ -1,0 +1,8 @@
+services:
+  single-dev-env:
+    image: docker/dev-environments-go:stable-1
+    container_name: renamed-dev-env
+    working_dir: /mycodepath
+    command: make run
+    ports:
+      - 5000:8080
